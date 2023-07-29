@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-M3KTQVTXVG"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-M3KTQVTXVG");
-    </script>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Wei Zhe Liu's Portfolio</title>
@@ -44,7 +29,7 @@
           </li>
           <li>
             <a
-              href="https://raw.githubusercontent.com/sagarreddypatil/resume/main/resume.pdf"
+              href="https://raw.githubusercontent.com/oxcitzen/oxcitzen.github.io/main/resume.pdf"
               ><h2>Resume</h2></a
             >
           </li>
@@ -199,28 +184,20 @@
               </p>
               <p>
                 Using eleven popular classifiers, I compared their performance and identified the top performers based on accuracy.Decision Tree, 
-                Random Forest, Extra Trees, Gradient Boosting, and Multiple Layer Perceptron emerged as the most accurate classifiers.
-              </p>
-              <p>
+                Random Forest, Extra Trees, Gradient Boosting, and Multiple Layer Perceptron emerged as the most accurate classifiers. 
                 To further boost accuracy and robustness, I implemented an ensemble modeling approach using the Voting Classifier. 
-                This technique combined the predictions of selected models, resulting in a 77% accuracy for loan eligibility prediction. 
+                This technique combined the predictions of selected models, resulting in a 77.8% accuracy for loan eligibility prediction. 
                 The Voting Classifier harnessed the collective power of multiple models, elevating the overall performance of the system.
                 
               </p>
 
-               <!-- 
-            
-              <p>
-                I am also currently working on optimizing the server code so
-                that it can run fast on a server with multiple GPUs and
-                automatically schedule text generation tasks.
-              </p>
+              
               <p>
                 The code for this project can be found on
-                <a href="https://github.com/sagarreddypatil/nlp-discord-chatbot"
+                <a href="https://github.com/Oxcitzen/Dream-Housing-Loan-Prediction/tree/main"
                   >GitHub</a
                 >
-              </p> -->
+              </p>
             </div>
           </div>
           
@@ -302,7 +279,7 @@
             <br>
             <div>
               Website Code on
-              <a href="https://github.com/sagarreddypatil/portfolio-website"
+              <a href="https://github.com/Oxcitzen/wz.me.github.io"
                 >GitHub</a
               >
             </div>
@@ -311,19 +288,6 @@
         
       </section>
     </main>
-    <script>
-      document.querySelectorAll("img").forEach((elm) => {
-        let url = new URL(elm.src);
-
-        if (
-          location.hostname === "sagarpatil.me" &&
-          url.hostname === "sagarpatil.me"
-        ) {
-          elm.src =
-            "https://github.com/sagarreddypatil/portfolio-website/raw/master" +
-            elm.src.replace(/^.*\/\/[^\/]+/, "");
-        }
-      });
-    </script>
+ 
   </body>
 </html>
