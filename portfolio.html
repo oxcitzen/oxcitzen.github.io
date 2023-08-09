@@ -106,6 +106,51 @@
           </p> 
         </div>
       </div>
+      <div class="column project">
+        <br>
+        <h3>Real-time Hand Gesture Recognition System </h3>
+        <div class="column project">
+          <img src="images/cover.png" style="width: 100%; max-width: 650px;" />
+          <p>
+            This project showcases a straightforward hand gesture recognition system using Python, OpenCV, and MediaPipe. 
+            It involves data collection, processing, model training, and real-time detection. The webcam captures diverse hand gestures, 
+            classified into three categories with 50 images each, stored under "./data/1" for class 1, and so on.
+          </p>
+
+          <p>
+          In data processing, MediaPipe's hand-tracking module extracts x and y coordinates of 21 hand landmarks, 
+          normalizing them through min-max normalization. These normalized landmarks form 1D arrays stored alongside class 
+          labels in a numpy array.
+          </p>
+
+          <p>
+          Model training employs scikit-learn's RandomForestClassifier, assessing accuracy on a test set. For real-time detection, 
+          the webcam captures frames, extracting normalized landmarks with MediaPipe, and predicting gesture classes using the trained 
+          random forest model. Results display in the frame, along with landmark visualizations. Users exit using the 'X' key.
+          </p>
+
+          <p>
+          While showcasing computer vision and machine learning integration for gesture recognition, the project addresses biases in 
+          data collection. Capture bias, influenced by webcam factors like resolution and lighting, impacts image quality and diversity. 
+          Selection bias, tied to participant choice, affects data's representativeness. Data collection bias affects performance and 
+          equity of the recognition system.
+
+          </p>
+
+          <p>
+          To improve, broader datasets, more gestures, features, and complex models can be adopted. 
+          These steps would enhance system capabilities, mitigate biases, and boost overall performance and fairness.
+          </p>
+
+          
+          <p>
+            The code for this project can be found on
+            <a href="https://github.com/oxcitzen/Real-Time-Hand-Gesture-Recognition-System"
+              >GitHub</a
+            >
+          </p>
+        </div>
+      </div>
           <div class="column project">
             <br>
             <h3>Forecasting Household Electric Power Consumption With Time Series Data</h3>
@@ -139,7 +184,7 @@
               </p>
 
               <p>
-                However, during the training process, I implemented early stopping to prevent overfitting. 
+                During the training process, I implemented early stopping to prevent overfitting. 
                 The model effectively stopped at epoch 22, which ensured that I obtained an optimal performance without sacrificing generalization.
                 The LSTM model exhibited a training loss of 0.01 and validation loss of 0.094, signifying its effectiveness in making accurate 
                 predictions. The visually appealing plots of predicted values alongside the actual values validated the model's reliability and 
@@ -154,6 +199,9 @@
               </p> 
             </div>
           </div>
+
+        
+          
           <div class="column project">
             <br>
             <h3>Dream Housing Loan Prediction</h3>
@@ -203,7 +251,7 @@
           
           <div class="column project">
             <br>
-            <h3>Lightning Wilfire Lab</h3>
+            <h3>Lightning Wildfire Lab</h3>
             <div class="content">
                 <div class="row">
                     <div class="column">
