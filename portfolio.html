@@ -47,13 +47,13 @@
               I am excited to embark on new opportunities, collaborations, and projects that push the boundaries of data science and 
               make a difference in the world. Below are some of the projects I have worked on:
             </p>
-            <br>
+            <div style="height: 20px;"></div>
          
           </div>
         </div>
       </section>
       <section>
-        <h3>NanoHUB Clustering</h3>
+        <h3>nanoHUB Clustering Optimization</h3>
         <div class="content">
           <div class="row">
             <div class="column">
@@ -64,21 +64,24 @@
           <div class="column">
           
           <p>
-            The project focuses on enhancing user experience on Nanohub, a renowned online platform for nanotechnology and related disciplines,
-            offering simulation tools, educational resources, and a vibrant community.
+            The project focuses on enhancing user experience on nanoHUB.org, a renowned online platform for nanotechnology and related disciplines,
+            offering simulation tools, educational resources, and a vibrant community. 
           </p>
+          <div style="height: 5px;"></div>
           <p>
             The primary objective is to refine the classroom cluster detection system with advanced algorithms, considering usage patterns and 
             cluster mixtures. Our incremental approach involves concentrating on early data usage to predict emerging trends in classroom dynamics. 
             Proactively identifying behavior patterns aims to provide predictive insights, optimizing the user experience and resource allocation on
             Nanohub.
           </p>
+          <div style="height: 5px;"></div>
 
           <p>
           The evaluation phase includes comparing the effectiveness of new methods with existing cluster algorithms, identifying strengths, 
           weaknesses, and potential synergies for a more efficient system. In an optional phase, we'll explore identifying prominent institutions 
           within classroom clusters, providing insights into Nanohub's educational landscape and user demographics.
           </p>
+          <div style="height: 5px;"></div>
 
           <p>
         
@@ -86,7 +89,7 @@
           activity. I interpret the output and present it to the team to enhance understanding. Weekly meetings with mentors Gerhard Klimeck 
           and Daniel Meija ensure effective communication and project progress, a collaborative effort crucial in steering towards our goals.
           </p>
-     
+          <div style="height: 20px;"></div>
 
           
         </div>
@@ -109,36 +112,94 @@
               "https://www.trine.edu/innovation-one/aimm/index.aspx"
               >AIMM ICC</a
             > competition. 
-              Our objective was to design and build an autonomous boat equipped with cameras for image classification to identify the colors of buoys. 
-              The competition featured a racetrack set up on a lake, and the boat had to perform specific movements based on the buoy colors 
-              detected by the cameras. Points were awarded for correctly executing these maneuvers, such as moving left to pass through a green buoy or moving right to pass through a red buoy. 
+              Our objective was to design and build an autonomous boat equipped with cameras for object detection to identify the colors of obstacles. 
+              The competition featured a racetrack set up on a lake, and the boat had to perform specific movements based on the obstacle's color 
+              detected by the cameras. Points were awarded for correctly executing these maneuvers, such as moving left to pass through a green obstacle or moving right to pass through a red obstacle. 
               Additional bonus points were given if the boat successfully completed the track and returned to its starting point.
             </p>
+            <div style="height: 5px;"></div>
           
           <p>
-            I was part of the computer vision team, responsible for designing the data pipeline for the cameras to perform image classification. Our team included members from diverse backgrounds and majors, such as computer science, data science, mechanical engineering, electrical engineering, robotics, and computing engineering. The software team collaborated closely with the hardware team to integrate sensors and provide continuous feedback, ensuring the practicality and effectiveness of the design.
+            I was part of the computer vision team, responsible for designing the data pipeline for the cameras to perform obstacle detection. 
+            The other teams included the mechanical team, which handled the physical mountings on the boat and ensured all systems had power, 
+            and the navigation team, which used the computer vision detections (including distance data) and GPS coordinates for navigation.
           </p>
+          <div style="height: 5px;"></div>
+
           <p>
-            Through this process, we developed a strong sense of camaraderie and worked seamlessly together for the competition. 
-  
-            The diverse backgrounds and cross-collaboration not only expanded my domain knowledge but also deepened my appreciation for teamwork. 
-            Representing my university was one of my proudest moments, and it was a great pleasure to work with my teammates, who have now become friends.
+          We published a technical report detailing our process as part of the judging for the AIMM competition. 
+          Unfortunately, due to a late start and extremely bad weather, Purdue's performance in the competition was not as strong as we had hoped. 
+          Despite these challenges, we successfully developed a fully remote-controlled boat with a working computer vision system capable of detecting buoys 
+          and calculating their GPS coordinates based on their distance from the camera for navigation purposes. 
+          Additionally, we placed second in the presentation section of the competition, which was based on our report and an on-site presentation given to the judges. 
           </p>
+          <div style="height: 5px;"></div>
 
           <p>
             The technical report for the competition can be found <a href=
             "https://raw.githubusercontent.com/oxcitzen/oxcitzen.github.io/main/aimm_report.pdf"
             >here</a>.
           </p>
-
-          
-     
-
-
-
-
+          <div style="height: 20px;"></div>
         </div>
       </div>
+
+
+      <div class="column project">
+        <br>
+        <h3>Dream Housing Loan Prediction</h3>
+        <div class="column project">
+          <img src="images/binary.png" style="width: 100%; max-width: 650px;" />
+          <p>
+            To tackle the loan eligibility prediction problem for  <a
+            href="https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/#ProblemStatement"
+            >Dream Housing Finance company</a
+          >,
+            I embarked on a comprehensive data analysis journey. Through exploratory data analysis, 
+            I gained insights into the variables and their distributions, visualizing the relationships 
+            between features and loan approval status. I encountered a noticeable class imbalance, 
+            with a significant difference between approved and rejected loans.
+          </p>
+          <div style="height: 5px;"></div>
+
+          <p>
+            Handling missing values was crucial, and I applied appropriate imputation methods based on variable distributions. 
+            Skewed numerical variables underwent log transformations, aligning them with a normal distribution and improving 
+            the performance of machine learning algorithms. Dealing with outliers involved visualizing and removing them using 
+            box whisker plots and the interquartile range. This step ensured that the model focused on underlying patterns 
+            rather than being influenced by extreme values.
+          </p>
+          <div style="height: 5px;"></div>
+
+          <p>
+            Categorical variables were transformed into numerical representations using one-hot encoding, expanding them into binary columns. 
+            This prepared the dataset for modeling with powerful machine learning algorithms. To address class imbalance, 
+            I employed the Synthetic Minority Over-sampling Technique (SMOTE), generating synthetic samples of the minority class. 
+            This balanced the class distribution and improved the model's ability to learn from representative data.
+          </p>
+          <div style="height: 5px;"></div>
+
+          <p>
+            Using eleven popular classifiers, I compared their performance and identified the top performers based on accuracy. Decision Tree, 
+            Random Forest, Extra Trees, Gradient Boosting, and Multiple Layer Perceptron emerged as the most accurate classifiers. 
+            To further boost accuracy and robustness, I implemented an ensemble modeling approach using the Voting Classifier. 
+            This technique combined the predictions of selected models, resulting in a 77.8% accuracy for loan eligibility prediction. 
+            The Voting Classifier harnessed the collective power of multiple models, elevating the overall performance of the system.
+          </p>
+          <div style="height: 5px;"></div>
+
+          
+          <p>
+            The project can be found on
+            <a href="https://github.com/Oxcitzen/Dream-Housing-Loan-Prediction/tree/main"
+              >GitHub</a
+            >
+          </p>
+          <div style="height: 20px;"></div>
+        </div>
+      </div>
+
+
       <div class="column project">
         <br>
         <h3>Celebrity Image Classification</h3>
@@ -156,6 +217,7 @@
             Michelle Yeoh, Saoirse Ronan, and Tony Leung. It covers various aspects of data science and machine learning, 
             including data collection, data cleaning, feature engineering, model building, model fine-tuning, and model deployment. 
           </p>
+          <div style="height: 5px;"></div>
           <p>
             Data collection involved utilizing the Fatkun Chrome tool to download images of the celebrities from sources like Google Images and Bing Images.
             Fatkun is a powerful and user-friendly Google Chrome extension that simplifies the process of bulk image download from web pages.
@@ -163,6 +225,7 @@
             The decision to use Fatkun for image collection is based on its ease of use and time efficiency. 
             This approach eliminates the need for coding and reduces the complexity of the data collection workflow.
           </p>
+          <div style="height: 5px;"></div>
 
           <p>
             Data cleaning involved two tasks: face detection and image resizing. Face detection was performed using OpenCV to crop out the faces of the celebrities from the images. 
@@ -171,6 +234,7 @@
             Wavelet transforms were used to extract low-level features from grayscale face images using PyWavelets. 
             Color histograms were used to extract high-level features from color face images using OpenCV.
           </p>
+          <div style="height: 5px;"></div>
 
           <p>
             Model building consisted of building three models: SVM, logistic regression, and random forest. 
@@ -179,59 +243,27 @@
             Cross-validation evaluated the model performance using accuracy as a metric, and grid search searched for the best hyperparameter 
             combinations.
           </p>
+          <div style="height: 5px;"></div>
           <p>
             The project resulted in trained models for each actor. These models can be used for classifying new images of the actor. 
             Overall, the project showcases the complete pipeline of a data science and machine learning project, 
             from data collection and cleaning to feature engineering, model building, and fine-tuning.
           </p>
+          <div style="height: 5px;"></div>
 
           
           <p>
-            The code for this project can be found on
+            The project can be found on
             <a href="https://github.com/Oxcitzen/Celebrity-Image-Classfication-Model"
               >GitHub</a
             >
           </p> 
+          <div style="height: 20px;"></div>
         </div>
       </div>
-
-
-      
     </div>
   </div>
-  <div class="column project">
-    <br>
-    <h3>Indiana Corn Yield Predictor</h3>
-    <div class="content">
-      <div class="row">
-        <div class="column">
-            <img src="images/indiana-corn-fields-selena-wagner.jpg" style="width: 100%; max-width: 650px;" />
-        </div>
-    </div>
-    <div class="row">
-      <div class="column">
-      
-      <p>
-        For the senior design project, I embarked on the challenging task of exploring machine learning techniques for predicting corn yield. 
-        Recognizing the limitations of traditional process-based crop models, the objective was to enhance the accuracy of yield forecasting in a given year. 
-        My role involved leading the implementation of machine learning methodologies aimed at forecasting corn production at the state level. 
-        This endeavor required careful coordination of the entire data pipeline, from extraction and cleaning to modeling and refinement. 
-      </p>
-      <p>
-        Throughout the project, I had the privilege of working alongside a dedicated team of five individuals. Together, we navigated the intricacies of code development, research,  
-        technical report writing, and presentation delivery. Each team member brought valuable insights and skills to the table, enriching our collective understanding of the 
-        problem at hand.  
-      </p>
-
-
-      <p>
-        The code for this project can be found on
-        <a href="https://github.com/oxcitzen/Indiana-Corn-Yield"
-          >GitHub</a
-        >
-      </p> 
-    </div>
-  </div>
+  
       
       <div class="column project">
         <br>
@@ -243,18 +275,21 @@
             It involves data collection, processing, model training, and real-time detection. The webcam captures diverse hand gestures, 
             classified into three categories with 50 images each, stored under "./data/1" for class 1, and so on.
           </p>
+          <div style="height: 5px;"></div>
 
           <p>
           In data processing, MediaPipe's hand-tracking module extracts x and y coordinates of 21 hand landmarks, 
           normalizing them through min-max normalization. These normalized landmarks form 1D arrays stored alongside class 
           labels in a numpy array.
           </p>
+          <div style="height: 5px;"></div>
 
           <p>
           Model training employs scikit-learn's RandomForestClassifier, assessing accuracy on a test set. For real-time detection, 
           the webcam captures frames, extracting normalized landmarks with MediaPipe, and predicting gesture classes using the trained 
           random forest model. Results display in the frame, along with landmark visualizations. Users exit using the 'X' key.
           </p>
+          <div style="height: 5px;"></div>
 
           <p>
           While showcasing computer vision and machine learning integration for gesture recognition, the project addresses biases in 
@@ -263,186 +298,63 @@
           equity of the recognition system.
 
           </p>
+          <div style="height: 5px;"></div>
 
           <p>
           To improve, broader datasets, more gestures, features, and complex models can be adopted. 
           These steps would enhance system capabilities, mitigate biases, and boost overall performance and fairness.
           </p>
+          <div style="height: 5px;"></div>
 
           
           <p>
-            The code for this project can be found on
+            The project can be found on
             <a href="https://github.com/oxcitzen/Real-Time-Hand-Gesture-Recognition-System"
               >GitHub</a
             >
           </p>
+          <div style="height: 20px;"></div>
         </div>
       </div>
-          <div class="column project">
-            <br>
-            <h3>Forecasting Household Electric Power Consumption With Time Series Data</h3>
-            <div class="content">
-              <div class="row">
-                <div class="column">
-                    <img src="images/electric.png" style="width: 100%; max-width: 650px;" />
-                </div>
-            </div>
-            <div class="row">
-              <div class="column">
-              
-              <p>
-                During this project, I extensively analyzed the 
-                <a href="http://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption"
-                >household electric power consumption dataset</a> 
-                from the UCI Machine Learning Repository. My exploratory data analysis involved various insightful steps, including plotting 
-                the distribution and time series of the global active power, decomposing the time series into trend, seasonality, and residual components, 
-                testing the stationarity of the time series, and visualizing the autocorrelation and partial autocorrelation functions. Through these analyses, 
-                I made intriguing discoveries, identifying a noticeable downward trend, yearly seasonality, and some weekly 
-                periodicity within the time series. 
-              </p>
-
-              <p>
-                
-              Continuing with my research, I leveraged the power of a LSTM (Long Short-Term Memory) network to forecast the global active 
-              power. To prepare the data for modeling, I applied MinMaxScaler for scaling and reshaped it into a three-dimensional array. 
-              I designed the LSTM network, comprising one hidden layer with 50 neurons and one output layer. 
-              Employing mean squared error as the loss function and the Adam optimizer, I trained the model for 100 epochs using a batch 
-              size of 70.
-              </p>
-
-              <p>
-                During the training process, I implemented early stopping to prevent overfitting. 
-                The model effectively stopped at epoch 22, which ensured that I obtained an optimal performance without sacrificing generalization.
-                The LSTM model exhibited a training loss of 0.01 and validation loss of 0.094, signifying its effectiveness in making accurate 
-                predictions. The visually appealing plots of predicted values alongside the actual values validated the model's reliability and 
-                showcased its potential for practical applications.
-              </p>
- 
-              <p>
-                The code for this project can be found on
-                <a href="https://github.com/Oxcitzen/Household-Electric-Consumption-Over-Time-Analysis"
-                  >GitHub</a
-                >
-              </p> 
-            </div>
-          </div>
-
-        
-          
-          <div class="column project">
-            <br>
-            <h3>Dream Housing Loan Prediction</h3>
-            <div class="column project">
-              <img src="images/binary.png" style="width: 100%; max-width: 650px;" />
-              <p>
-                To tackle the loan eligibility prediction problem for  <a
-                href="https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/#ProblemStatement"
-                >Dream Housing Finance company</a
-              >,
-                I embarked on a comprehensive data analysis journey. Through exploratory data analysis, 
-                I gained insights into the variables and their distributions, visualizing the relationships 
-                between features and loan approval status. I encountered a noticeable class imbalance, 
-                with a significant difference between approved and rejected loans.
-              </p>
-              <p>
-                Handling missing values was crucial, and I applied appropriate imputation methods based on variable distributions. 
-                Skewed numerical variables underwent log transformations, aligning them with a normal distribution and improving 
-                the performance of machine learning algorithms. Dealing with outliers involved visualizing and removing them using 
-                box whisker plots and the interquartile range. This step ensured that the model focused on underlying patterns 
-                rather than being influenced by extreme values.
-              </p>
-              <p>
-                Categorical variables were transformed into numerical representations using one-hot encoding, expanding them into binary columns. 
-                This prepared the dataset for modeling with powerful machine learning algorithms. To address class imbalance, 
-                I employed the Synthetic Minority Over-sampling Technique (SMOTE), generating synthetic samples of the minority class. 
-                This balanced the class distribution and improved the model's ability to learn from representative data.
-              </p>
-              <p>
-                Using eleven popular classifiers, I compared their performance and identified the top performers based on accuracy.Decision Tree, 
-                Random Forest, Extra Trees, Gradient Boosting, and Multiple Layer Perceptron emerged as the most accurate classifiers. 
-                To further boost accuracy and robustness, I implemented an ensemble modeling approach using the Voting Classifier. 
-                This technique combined the predictions of selected models, resulting in a 77.8% accuracy for loan eligibility prediction. 
-                The Voting Classifier harnessed the collective power of multiple models, elevating the overall performance of the system.
-                
-              </p>
-
-              
-              <p>
-                The code for this project can be found on
-                <a href="https://github.com/Oxcitzen/Dream-Housing-Loan-Prediction/tree/main"
-                  >GitHub</a
-                >
-              </p>
-            </div>
-          </div>
-          
-          <div class="column project">
-            <br>
-            <h3>Lightning Wildfire Lab</h3>
-            <div class="content">
-                <div class="row">
-                    <div class="column">
-                        <img src="images/wildfire.png" style="width: 100%; max-width: 800px;" />
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="column">
-              
-              <p>
-                I am currently working on a lightning wildfire research project led by Professor Yuan Wang at my university. 
-                The primary objective of the research is to implement statistical models to find the correlation between lightning and fires, 
-                and build machine learning models to predict the locations of fires based on lightning strikes. In this past semester, 
-                our team has been focused on setting up Python scripts to automate the extraction of satellite data (GOES-R) 
-                and perform data visualization and cleaning for machine learning use.
-              </p>
-              <p>
-                Throughout the project, I assumed the responsibility of supervising code development and organizing the research workflow 
-                within the lab. This involved handling the evaluation and integration of new scripts to create an efficient system that 
-                facilitated information querying and visualization for other researchers. Furthermore, I automated API requests to collect 
-                extensive fire data from USGS (United States Geological Survey). The ultimate goal of this endeavor was to leverage deep 
-                learning models to uncover the correlation between lightning strikes and wildfires. <br>
-              </p>
+         
             
+          <div class="column project">
+            <br>
+            <h3>Vehicle Routing Problem (VRP)</h3>
+            <div class="column project">
+             
+              <img src="images/vehicle.png" style="width: 100%; max-width: 700px;" />
+               
+              
+                
+             <p>
+              In this project, I tackled a Vehicle Routing Problem (VRP), a challenging optimization task in logistics. 
+              The scenario involved efficiently routing a fleet of vehicles from a central depot to deliver goods to 10 customers, 
+              each with specific demands. What made this problem intriguing was its combination of real-world applicability and algorithmic complexity.
+             </p>
+             <div style="height: 5px;"></div>
+             <p>
+              Key technical challenges included designing an edge selection mechanism that considered pheromone levels, distance heuristics, and 
+              vehicle capacity constraints. I also implemented a pheromone update system and an early stopping mechanism for efficiency.
+             </p>
+             <div style="height: 5px;"></div>
+             <p>
+              The project required a delicate balance of algorithm design, parameter tuning, and problem-specific adaptations. 
+              It was particularly satisfying to see the algorithm converge rapidly to a cost-effective solution,
+              demonstrating the power of nature-inspired computing in solving practical business problems.
+             </p>
+             <div style="height: 5px;"></div>
+             <p>
+              The project can be found on
+              <a
+                href="https://github.com/oxcitzen/Vehicle_Routing_Challenge"
+                >GitHub</a
+              >.
+             </p>
+             <div style="height: 20px;"></div>
             </div>
-          </div>
-      </div>
-      <div class="column project">
-        <br>
-        <h3>Business Sales Insights with Power BI</h3>
-        <div class="content">
-          <div class="row">
-            <div class="column">
-              <img src="images/bi.png" style="width: 100%; max-width: 700px;" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="column">
-        <p>
-          In my data analysis project using Power BI, I harnessed the power of data to drive business success. 
-          By extracting insights from diverse data sources such as sales transactions, customer demographics, and market trends, 
-          I aimed to empower businesses with actionable sales insights. Power BI's connectivity capabilities allowed me to seamlessly 
-          connect to these data sources, ensuring a comprehensive view of the business landscape. 
-          With a solid data modeling foundation and the use of Data Analysis Expressions (DAX), 
-          I gained a deeper understanding of the data and generated custom calculations such as sales growth and customer lifetime value.
-        </p>
-        <p>
-          To provide real-time insights, I designed interactive dashboards using Power BI. These visually engaging dashboards served as 
-          a dynamic window into the latest sales trends and market insights. By incorporating interactive visualizations like charts, 
-          graphs, and maps, I enabled stakeholders to explore data, identify patterns, and make data-driven decisions. 
-          These dashboards became powerful tools for monitoring sales performance, detecting market trends, and uncovering growth opportunities.
-        </p>
-        <p>
-          Through my project using Power BI, I transformed raw data into actionable insights. By connecting to various data sources, building robust data models, 
-          and applying custom calculations, I unveiled hidden stories within the data. The interactive dashboards 
-          I created not only provided real-time sales insights but also empowered businesses to identify market trends and make informed decisions.
-        </p>
-        <p>
-          The code for this project can be found on
-          <a
-            href="https://github.com/Oxcitzen/Business-Sales-Insights-Power-BI"
-            >GitHub</a
-          >.
-        </p>
+      
+
       </div>
           </div>
           <div class="column project">
@@ -474,7 +386,7 @@
       <section>
         
         <footer>
-          <div class="column">Made by Wei Zhe Liu
+          <div>Written by Wei Zhe Liu
           <div class="column">
             <br>
             <div>
